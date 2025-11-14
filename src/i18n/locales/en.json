@@ -1,0 +1,1210 @@
+{
+  "nav": {
+    "services": "Services",
+    "pricing": "Pricing",
+    "setup": "Setup",
+    "caseStudies": "Case Studies",
+    "blog": "Blog",
+    "faq": "FAQ",
+    "contact": "Contact",
+    "startNow": "Start now",
+    "freeConsultation": "Free Consultation",
+    "viewPricing": "View Pricing"
+  },
+  "home": {
+    "meta": {
+      "title": "Fynteq - Expert Payment Integration Services | Stripe & PayPal Setup in 3-7 Days",
+      "description": "Professional payment integration for SaaS, e-commerce & startups. Expert Stripe & PayPal setup in 3-7 days. Subscription billing, marketplace payments, PCI-aware implementation. Experience across hundreds of merchant integrations."
+    },
+    "blog": {
+      "card1": {
+        "category": "Payment Gateway Integration",
+        "title": "Complete Guide to Stripe Integration",
+        "excerpt": "Learn how to integrate Stripe payments into your website or app with our comprehensive guide."
+      },
+      "card2": {
+        "category": "SaaS Zahlungsabwicklung",
+        "title": "SaaS Subscription Billing Best Practices",
+        "excerpt": "Optimize your subscription billing strategy with these proven best practices for SaaS businesses."
+      },
+      "card3": {
+        "category": "Payment Gateway Sicherheit",
+        "title": "PCI Compliance Checklist for Online Businesses",
+        "excerpt": "Ensure your online business meets PCI compliance requirements with our comprehensive checklist."
+      },
+      "readMore": "Read More",
+      "viewAll": "View All Articles"
+    }
+  },
+  "painPoints": {
+    "title": "Payments break silently. You only notice when revenue drops.",
+    "subtitle": "Across thousands of Stripe/PayPal businesses:",
+    "statistics": [
+      {
+        "stat": "4–8%",
+        "description": "of payments fail silently"
+      },
+      {
+        "stat": "15–30%",
+        "description": "of subscriptions churn involuntarily"
+      },
+      {
+        "stat": "1 in 20",
+        "description": "checkouts fail due to integration issues"
+      },
+      {
+        "stat": "Payouts stall",
+        "description": "because of KYC restrictions"
+      },
+      {
+        "stat": "Webhooks fail",
+        "description": "without warnings"
+      }
+    ],
+    "ifNotMonitoring": {
+      "title": "If you're not monitoring:",
+      "consequences": [
+        "You lose revenue",
+        "You don't know why",
+        "You find out too late"
+      ]
+    },
+    "conclusion": "Fynteq Pulse monitors all of this for you, automatically."
+  },
+  "process": {
+    "title": "How It Works",
+    "subtitle": "",
+    "steps": [
+      {
+        "number": "1",
+        "title": "Connect Stripe or PayPal (30 seconds)",
+        "description": "Secure, read-only OAuth connection. No card numbers or sensitive data is ever exposed."
+      },
+      {
+        "number": "2",
+        "title": "Pulse monitors your payments 24/7",
+        "description": "We track your full payment lifecycle:",
+        "items": [
+          "checkouts",
+          "on-session payments",
+          "subscriptions",
+          "renewals",
+          "payouts",
+          "KYC status",
+          "disputes"
+        ]
+      },
+      {
+        "number": "3",
+        "title": "We detect issues before they hurt revenue",
+        "description": "Pulse automatically flags:",
+        "items": [
+          "checkout errors",
+          "failed renewals",
+          "webhook/API failures",
+          "payout & KYC problems",
+          "chargebacks & fraud signals"
+        ]
+      },
+      {
+        "number": "4",
+        "title": "You get alerts + clear actions",
+        "description": "Delivered via Email, Slack, or Telegram.",
+        "items": [
+          "severity level",
+          "what's broken",
+          "why it broke",
+          "the exact fix",
+          "direct link to resolve in Stripe/PayPal"
+        ]
+      }
+    ],
+    "noDevelopers": "No developers. No guesswork. No digging through logs."
+  },
+  "hero": {
+    "title": "Stop losing revenue to silent payment failures.",
+    "subtitle": "Fynteq Pulse monitors your Stripe & PayPal checkouts, subscriptions, renewals, and payouts 24/7 and alerts you before customers complain.",
+    "subtitle2": "Instant alerts. Clear fixes. Start accepting payments reliably in days, not weeks.",
+    "startFreeTrial": "Start now",
+    "bookCall": "Book a Call",
+    "trustedFor": "Trusted for: Stripe · PayPal · Shopify · Apple Pay · Google Pay · Adyen"
+  },
+  "services": {
+    "title": "Features",
+    "features": [
+      {
+        "icon": "",
+        "title": "Payment Health Score",
+        "description": "A daily 0–100 score showing the reliability of your entire payment system."
+      },
+      {
+        "icon": "",
+        "title": "Checkout Error Monitoring",
+        "description": "Automatically detects hidden issues such as:",
+        "items": [
+          "API key errors",
+          "CORS issues",
+          "Plugin conflicts",
+          "Missing domain verification",
+          "Apple/Google Pay misconfiguration"
+        ]
+      },
+      {
+        "icon": "",
+        "title": "Subscription & Renewal Monitoring",
+        "description": "Stay ahead of subscription churn with alerts for:",
+        "items": [
+          "upcoming card expirations",
+          "failed renewal attempts",
+          "dunning issues",
+          "high-risk customers"
+        ]
+      },
+      {
+        "icon": "",
+        "title": "Payout & Vendor Monitoring (Stripe Connect)",
+        "description": "Monitor the backbone of your marketplace or multi-vendor setup:",
+        "items": [
+          "delayed or stuck payouts",
+          "missing or failed KYC",
+          "restricted accounts",
+          "transfer failures"
+        ]
+      },
+      {
+        "icon": "",
+        "title": "Chargeback Watch",
+        "description": "Instant dispute alerts with a recommended evidence checklist."
+      },
+      {
+        "icon": "",
+        "title": "AI Payment Agent",
+        "description": "Explains in simple language:",
+        "items": [
+          "what broke",
+          "why it happened",
+          "severity",
+          "how to fix it",
+          "direct link to the Stripe/PayPal screen"
+        ]
+      }
+    ],
+    "integrations": {
+      "title": "Integrations",
+      "list": ["Stripe", "PayPal", "Shopify", "Salesforce", "Slack", "Email", "Telegram"]
+    },
+    "stripe": {
+      "title": "Stripe Integration",
+      "description": "Seamless Stripe payment gateway integration with advanced features"
+    },
+    "paypal": {
+      "title": "PayPal Integration", 
+      "description": "Secure PayPal payment processing with buyer protection"
+    },
+    "subscription": {
+      "title": "SaaS Subscription & Recurring Payment Integration",
+      "description": "Complete subscription billing setup with recurring payments, automated invoicing, customer management, and dunning management. Perfect for SaaS businesses, membership sites, and subscription-based platforms.",
+      "features": {
+        "automatedBilling": "Automated Billing",
+        "proration": "Proration & Coupons",
+        "dunning": "Dunning Management"
+      }
+    },
+    "marketplace": {
+      "title": "E-commerce & Marketplace Payment Integration",
+      "description": "Advanced e-commerce payment solutions including multi-vendor marketplace payments, shopping cart integration, split payments, and complex payment flows. Perfect for online stores and marketplace platforms.",
+      "features": {
+        "multiVendor": "Multi-vendor Support",
+        "splitPayments": "Split Payments",
+        "shoppingCart": "Shopping Cart Integration"
+      }
+    },
+    "international": {
+      "title": "International Payments",
+      "description": "Global payment processing with local payment methods"
+    },
+    "custom": {
+      "title": "Custom Solutions",
+      "description": "Tailored payment integrations for unique business requirements"
+    },
+    "additional": {
+      "title": "Additional Payment Solutions",
+      "subtitle": "Comprehensive payment services to meet all your business needs",
+      "services": {
+        "mobilePayments": "Mobile Payments",
+        "creditCard": "Credit Card Processing",
+        "fraudProtection": "Fraud Protection",
+        "paymentAnalytics": "Payment Analytics"
+      }
+    }
+  },
+  "pricing": {
+    "title": "Choose Your Plan",
+    "subtitle": "Unlock the power of an entire sales and marketing department with one person",
+    "monthly": "Monthly",
+    "yearly": "Yearly",
+    "discount": "Get Up to 34% Discount",
+    "guarantee": {
+      "title": "30-Day Money Back Guarantee",
+      "description": "Try it risk-free! If you're not completely satisfied, we'll refund your purchase - no questions asked."
+    },
+    "mostPopular": "Most Popular",
+    "plans": [
+      {
+        "icon": "",
+        "name": "Starter",
+        "price": "€29",
+        "description": "For creators, coaches, small e-commerce.",
+        "for": "For creators, coaches, small e-commerce.",
+        "features": [
+          "Payment Health Score",
+          "Failed payment alerts",
+          "Checkout & webhook monitoring",
+          "Weekly payment health report"
+        ],
+        "button": "Start Starter Plan",
+        "buttonLink": "#pricing",
+        "popular": false
+      },
+      {
+        "icon": "",
+        "name": "Pro",
+        "price": "€79",
+        "description": "For SaaS, memberships, subscription businesses.",
+        "for": "For SaaS, memberships, subscription businesses.",
+        "features": [
+          "Includes everything in Starter +",
+          "Renewal failure predictions",
+          "Smart dunning insights",
+          "Card expiry alerts",
+          "Chargeback notifications",
+          "Weekly subscription report"
+        ],
+        "button": "Start Pro Plan",
+        "buttonLink": "#pricing",
+        "popular": true
+      },
+      {
+        "icon": "",
+        "name": "Scale",
+        "price": "€149",
+        "description": "For agencies, marketplaces & multi-brand companies.",
+        "for": "For agencies, marketplaces & multi-brand companies.",
+        "features": [
+          "Includes everything in Pro +",
+          "Multi-account monitoring",
+          "Vendor payout & KYC alerts",
+          "Slack integration",
+          "Daily digest reporting",
+          "Optional CRM sync alerts"
+        ],
+        "button": "Start Scale Plan",
+        "buttonLink": "#pricing",
+        "popular": false
+      }
+    ],
+    "setupServices": {
+      "title": "Optional Setup Services",
+      "subtitle": "Done-for-you setup services.",
+      "services": [
+        {
+          "name": "Stripe Checkout Setup",
+          "price": "€299",
+          "description": "Get paid in 2–3 days. Includes Apple/Google Pay + success/cancel + webhooks."
+        },
+        {
+          "name": "Subscription Setup",
+          "price": "€749",
+          "description": "Turn one-time buyers into recurring revenue."
+        },
+        {
+          "name": "CRM Integration",
+          "price": "€1,499",
+          "description": "Stripe ↔ Salesforce sync + field mapping + alerts."
+        },
+        {
+          "name": "Marketplace Setup",
+          "price": "€1,999+",
+          "description": "Stripe Connect onboarding, KYC, split payouts."
+        }
+      ]
+    }
+  },
+  "caseStudies": {
+    "title": "Success Stories from Our Clients",
+    "subtitle": "Real results from businesses we've helped",
+    "viewAll": "View All Case Studies",
+    "viewPricing": "View Pricing",
+    "featured": {
+      "fitness": {
+        "coachType": "FITNESS COACH",
+        "title": "Online Fitness Coaching Platform",
+        "testimonial": "\"As a fitness coach, I needed to sell online programs and subscriptions. Fynteq set up Stripe integration with recurring billing for my monthly coaching plans. Now I'm making $8,500/month in recurring revenue with automated payments.\"",
+        "metrics": {
+          "monthlyRevenue": "Monthly Revenue",
+          "successRate": "Success Rate",
+          "daysSetup": "Days Setup"
+        },
+        "customer": {
+          "name": "Jessica Martinez",
+          "title": "Certified Personal Trainer"
+        }
+      },
+      "ecommerce": {
+        "businessType": "E-COMMERCE",
+        "title": "Multi-Currency Online Store",
+        "testimonial": "\"Our e-commerce store needed to accept payments from customers worldwide. Fynteq integrated both Stripe and PayPal with multi-currency support. We've increased international sales by 340% and reduced cart abandonment by 45%.\"",
+        "metrics": {
+          "growth": "Growth",
+          "lessAbandonment": "Less Abandonment",
+          "countries": "Countries"
+        },
+        "customer": {
+          "name": "David Rodriguez",
+          "title": "E-commerce Store Owner"
+        }
+      },
+      "saas": {
+        "businessType": "SAAS CONSULTANT",
+        "title": "SaaS Subscription Platform",
+        "testimonial": "\"As a business consultant, I launched a SaaS platform but struggled with complex subscription billing. Fynteq built a complete recurring payment system with proration, coupons, and dunning management. Monthly revenue grew from $2K to $28K in 6 months.\"",
+        "metrics": {
+          "monthlyRevenue": "Monthly Revenue",
+          "growth": "Growth",
+          "months": "Months"
+        },
+        "customer": {
+          "name": "Alex Chen",
+          "title": "Business Strategy Consultant"
+        }
+      }
+    },
+    "industries": {
+      "all": "All",
+      "fitnessWellness": "Fitness & Wellness",
+      "ecommerce": "E-commerce",
+      "saas": "SaaS",
+      "marketplace": "Marketplace",
+      "nonProfit": "Non-Profit",
+      "education": "Education"
+    },
+    "stories": [
+      {
+        "title": "How a Fitness Coach Increased Revenue by 340% with Subscription Billing",
+        "client": "Jessica Martinez",
+        "company": "FitLife Coaching",
+        "industry": "Fitness & Wellness",
+        "challenge": "Manual payment processing and high churn rate",
+        "solution": "Automated Stripe subscription billing with dunning management",
+        "results": {
+          "revenueIncrease": "340%",
+          "churnReduction": "60%",
+          "customerRetention": "85%"
+        }
+      },
+      {
+        "title": "E-commerce Store Expands to 15 Countries with Multi-Currency Support",
+        "client": "Michael Chen",
+        "company": "Global Fashion Hub",
+        "industry": "E-commerce",
+        "challenge": "Limited to domestic sales only",
+        "solution": "Multi-currency payment processing with local payment methods",
+        "results": {
+          "countriesReached": "15",
+          "internationalSales": "45%",
+          "averageOrderValue": "28%"
+        }
+      },
+      {
+        "title": "SaaS Startup Scales from $2K to $28K Monthly Revenue",
+        "client": "Sarah Johnson",
+        "company": "TechFlow Solutions",
+        "industry": "SaaS",
+        "challenge": "Complex billing requirements and high churn",
+        "solution": "Advanced subscription management with usage-based billing",
+        "results": {
+          "revenueGrowth": "1300%",
+          "churnReduction": "40%",
+          "customerLifetime": "2.5x"
+        }
+      }
+    ],
+    "cta": {
+      "title": "Ready to Write Your Success Story?",
+      "subtitle": "Join hundreds of businesses that have transformed their payment processing with our expert integration services."
+    },
+    "detailed": [
+      {
+        "id": 1,
+        "title": "How a Fitness Coach Increased Revenue by 340% with Subscription Billing",
+        "slug": "fitness-coach-increased-revenue-subscription-billing",
+        "industry": "Fitness & Wellness",
+        "client": "Jessica Martinez",
+        "company": "FitLife Coaching",
+        "challenge": "Manual payment processing and high churn rate",
+        "solution": "Automated Stripe subscription billing with dunning management",
+        "results": {
+          "revenueIncrease": "340%",
+          "churnReduction": "60%",
+          "customerRetention": "85%"
+        },
+        "description": "Jessica was struggling with manual payment processing and high customer churn. We implemented automated Stripe subscription billing with smart dunning management.",
+        "image": "https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 2,
+        "title": "E-commerce Store Expands to 15 Countries with Multi-Currency Support",
+        "slug": "ecommerce-store-expands-multi-currency",
+        "industry": "E-commerce",
+        "client": "Michael Chen",
+        "company": "Global Fashion Hub",
+        "challenge": "Limited to domestic sales only",
+        "solution": "Multi-currency payment processing with local payment methods",
+        "results": {
+          "countriesReached": "15",
+          "internationalSales": "45%",
+          "averageOrderValue": "28%"
+        },
+        "description": "Michael's fashion store was limited to domestic sales. We implemented multi-currency support with local payment methods for international expansion.",
+        "image": "https://images.unsplash.com/photo-1441986300917-64674bd600d8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 3,
+        "title": "SaaS Startup Scales from $2K to $28K Monthly Revenue",
+        "slug": "saas-startup-scales-revenue",
+        "industry": "SaaS",
+        "client": "Sarah Johnson",
+        "company": "TechFlow Solutions",
+        "challenge": "Complex billing requirements and high churn",
+        "solution": "Advanced subscription management with usage-based billing",
+        "results": {
+          "revenueGrowth": "1300%",
+          "churnReduction": "40%",
+          "customerLifetime": "2.5x"
+        },
+        "description": "Sarah's SaaS startup needed complex billing capabilities. We built advanced subscription management with usage-based billing and analytics.",
+        "image": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 4,
+        "title": "Marketplace Platform Processes $2M+ in Transactions Monthly",
+        "slug": "marketplace-platform-transaction-processing",
+        "industry": "Marketplace",
+        "client": "David Rodriguez",
+        "company": "ConnectHub Marketplace",
+        "challenge": "Complex multi-vendor payment splitting and compliance",
+        "solution": "Marketplace payment infrastructure with automated vendor payouts",
+        "results": {
+          "transactionVolume": "$2M+",
+          "vendorRetention": "92%",
+          "processingTime": "24h"
+        },
+        "description": "David's marketplace needed to handle payments for hundreds of vendors with automated splitting and payouts. We built a robust marketplace payment system with real-time processing.",
+        "image": "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 5,
+        "title": "Non-Profit Increases Donations by 180% with Recurring Payments",
+        "slug": "nonprofit-donation-recurring-payments",
+        "industry": "Non-Profit",
+        "client": "Maria Santos",
+        "company": "Hope Foundation",
+        "challenge": "Low donation retention and manual processing",
+        "solution": "Recurring donation system with donor management",
+        "results": {
+          "donationIncrease": "180%",
+          "recurringDonors": "65%",
+          "processingCosts": "40%"
+        },
+        "description": "Maria's non-profit struggled with one-time donations and high processing costs. We implemented a recurring donation system that increased donor retention and reduced costs.",
+        "image": "https://images.unsplash.com/photo-1593113598332-cd288d649433?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 6,
+        "title": "Online Education Platform Streamlines Course Payments",
+        "slug": "education-platform-course-payments",
+        "industry": "Education",
+        "client": "Dr. James Wilson",
+        "company": "EduTech Academy",
+        "challenge": "Complex course pricing and student payment management",
+        "solution": "Multi-tier course payment system with student portals",
+        "results": {
+          "enrollmentIncrease": "250%",
+          "paymentSuccess": "98%",
+          "studentSatisfaction": "95%"
+        },
+        "description": "Dr. Wilson's education platform needed to handle various course types and payment plans. We created a flexible payment system that supports individual courses, bundles, and subscriptions.",
+        "image": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 7,
+        "title": "Yoga Studio Doubles Revenue with Automated Class Booking",
+        "slug": "yoga-studio-automated-booking",
+        "industry": "Fitness & Wellness",
+        "client": "Emma Thompson",
+        "company": "ZenFlow Yoga Studio",
+        "challenge": "Manual booking system and payment collection",
+        "solution": "Automated class booking with integrated payment processing",
+        "results": {
+          "revenueIncrease": "200%",
+          "bookingEfficiency": "85%",
+          "customerRetention": "90%"
+        },
+        "description": "Emma's yoga studio was using manual booking and payment collection. We implemented an automated system that handles class bookings, payments, and membership management seamlessly.",
+        "image": "https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 8,
+        "title": "Fashion Boutique Expands Online with Seamless Checkout",
+        "slug": "fashion-boutique-seamless-checkout",
+        "industry": "E-commerce",
+        "client": "Sophie Laurent",
+        "company": "Chic Boutique Paris",
+        "challenge": "High cart abandonment and complex inventory management",
+        "solution": "Optimized checkout flow with inventory integration",
+        "results": {
+          "cartAbandonment": "35%",
+          "conversionRate": "180%",
+          "averageOrderValue": "45%"
+        },
+        "description": "Sophie's fashion boutique struggled with cart abandonment and inventory sync issues. We created a seamless checkout experience with real-time inventory updates and multiple payment options.",
+        "image": "https://images.unsplash.com/photo-1469334031218-e382a71b716b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 9,
+        "title": "Project Management SaaS Achieves 400% Growth with Usage-Based Billing",
+        "slug": "project-management-saas-usage-billing",
+        "industry": "SaaS",
+        "client": "Alex Chen",
+        "company": "TaskFlow Pro",
+        "challenge": "Complex pricing tiers and billing accuracy",
+        "solution": "Usage-based billing with automated invoicing",
+        "results": {
+          "revenueGrowth": "400%",
+          "billingAccuracy": "99.8%",
+          "customerSatisfaction": "97%"
+        },
+        "description": "Alex's project management SaaS needed sophisticated billing for different user tiers and usage patterns. We implemented usage-based billing with automated invoicing and detailed analytics.",
+        "image": "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 10,
+        "title": "Freelance Services Marketplace Handles $5M+ in Payments",
+        "slug": "freelance-marketplace-payment-handling",
+        "industry": "Marketplace",
+        "client": "Rachel Kim",
+        "company": "SkillConnect Marketplace",
+        "challenge": "Escrow payments and dispute resolution",
+        "solution": "Secure escrow system with automated release",
+        "results": {
+          "paymentVolume": "$5M+",
+          "disputeRate": "2%",
+          "freelancerRetention": "88%"
+        },
+        "description": "Rachel's freelance marketplace needed secure escrow payments and dispute resolution. We built a robust system that holds payments in escrow until project completion with automated release mechanisms.",
+        "image": "https://images.unsplash.com/photo-1553877522-43269d4ea984?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 11,
+        "title": "Animal Rescue Organization Streamlines Donation Processing",
+        "slug": "animal-rescue-donation-processing",
+        "industry": "Non-Profit",
+        "client": "Lisa Anderson",
+        "company": "Paws & Hearts Rescue",
+        "challenge": "Multiple donation channels and volunteer coordination",
+        "solution": "Unified donation platform with volunteer management",
+        "results": {
+          "donationProcessing": "70%",
+          "volunteerEngagement": "150%",
+          "operationalCosts": "30%"
+        },
+        "description": "Lisa's animal rescue needed to coordinate donations from multiple channels and manage volunteer activities. We created a unified platform that handles donations, volunteer scheduling, and event management.",
+        "image": "https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      },
+      {
+        "id": 12,
+        "title": "Corporate Training Platform Scales to 10,000+ Employees",
+        "slug": "corporate-training-platform-scaling",
+        "industry": "Education",
+        "client": "Mark Stevens",
+        "company": "CorporateLearn Solutions",
+        "challenge": "Enterprise billing and compliance requirements",
+        "solution": "Enterprise-grade billing with compliance reporting",
+        "results": {
+          "employeeScale": "10,000+",
+          "billingEfficiency": "95%",
+          "complianceRate": "100%"
+        },
+        "description": "Mark's corporate training platform needed to handle enterprise billing for thousands of employees across multiple companies. We built a scalable system with detailed compliance reporting and automated invoicing.",
+        "image": "https://images.unsplash.com/photo-1516321318423-f06f85e504b3?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+      }
+    ]
+  },
+  "faq": {
+    "title": "FAQ",
+    "subtitle": "Frequently asked questions",
+    "questions": [
+      {
+        "question": "Do you see card data?",
+        "answer": "No. Stripe and PayPal never expose full card numbers. Fynteq Pulse uses secure, read-only access and only sees metadata & payment statuses."
+      },
+      {
+        "question": "Will Pulse break my current checkout?",
+        "answer": "No. Pulse does not modify your checkout or payment settings. It only monitors and alerts you."
+      },
+      {
+        "question": "Do I need a developer to use Pulse?",
+        "answer": "No. Setup takes 30 seconds. Everything else is automatic."
+      },
+      {
+        "question": "Does Pulse work with Shopify?",
+        "answer": "Yes. All Shopify stores using Stripe or PayPal are supported."
+      },
+      {
+        "question": "Can Pulse fix issues automatically?",
+        "answer": "Pulse provides guided actions and direct links to the exact place in Stripe/PayPal. Some tasks (like retries) can be automated."
+      },
+      {
+        "question": "Is my data secure?",
+        "answer": "Yes. We use Stripe/PayPal OAuth, end-to-end encryption, and never store sensitive data."
+      },
+      {
+        "question": "Do you support Stripe Connect for marketplaces?",
+        "answer": "Yes, including vendor onboarding, payout issues, KYC failures, and more."
+      }
+    ],
+    "finalCta": {
+      "title": "Know when payments fail, and why, before your customers notice.",
+      "subtitle": "Start monitoring your Stripe & PayPal today.",
+      "startTrial": "Start now",
+      "bookCall": "Book a Call"
+    }
+  },
+  "metrics": {
+    "title": "Trusted Payment Integration Partner",
+    "subtitle": "Leading payment integration services for SaaS, e-commerce, and startups worldwide. Professional Stripe and PayPal setup with guaranteed results and rapid, reliable implementations.",
+    "integrations": "Integrations delivered",
+    "uptime": "Rapid, reliable implementations",
+    "support": "Support: Mon–Fri 9:00–18:00 CET",
+    "security": {
+      "title": "Enterprise-grade security",
+      "description": "PCI-aware implementation with bank-level encryption and fraud protection."
+    },
+    "setup": {
+      "title": "Lightning-fast setup",
+      "description": "Get your payment system live in days, not months. No complex configurations required."
+    },
+    "dedicated": {
+      "title": "Dedicated support",
+      "description": "Real humans, real expertise. Our team is here when you need us, not chatbots."
+    }
+  },
+  "about": {
+    "title": "Built for developers, designed for business",
+    "subtitle": "We're a team of payment infrastructure experts who believe that accepting money online shouldn't require a computer science degree. Our mission is to make payment integration as simple as possible, so you can focus on what matters most: building your business.",
+    "experience": {
+      "title": "10+ years of experience",
+      "description": "Our team has worked with payment systems at scale, from startups to Fortune 500 companies."
+    },
+    "approach": {
+      "title": "Developer-first approach",
+      "description": "We speak your language and understand the technical challenges you face daily."
+    },
+    "security": {
+      "title": "Security by design",
+      "description": "Every integration follows PCI DSS compliance and industry best practices for security."
+    },
+    "stats": {
+      "integrations": {
+        "title": "Experience across hundreds of merchant integrations",
+        "subtitle": "Successfully delivered"
+      },
+      "uptime": {
+        "title": "Rapid, reliable implementations",
+        "subtitle": "Production readiness checks"
+      },
+      "support": {
+        "title": "Support: Mon–Fri 9:00–18:00 CET",
+        "subtitle": "When you need us"
+      }
+    }
+  },
+  "contact": {
+    "title": "Get In Touch",
+    "subtitle": "Ready to integrate payments? Let's discuss your project.",
+    "info": {
+      "title": "Contact Information",
+      "email": "Email",
+      "hours": "Business Hours",
+      "hoursValue": "Mon-Fri 9am - 6pm",
+      "response": "Response Time",
+      "responseValue": "Typically within 2 hours"
+    },
+    "consultation": {
+      "title": "Ready to get started?",
+      "description": "Schedule a free consultation to discuss your payment integration needs.",
+      "button": "Schedule Free Consultation"
+    },
+    "form": {
+      "name": "Name",
+      "email": "Email", 
+      "company": "Company",
+      "project": "Project Type",
+      "message": "Message",
+      "emailPlaceholder": "your@email.com",
+      "companyPlaceholder": "Your Company Name",
+      "messagePlaceholder": "Tell us about your payment integration needs...",
+      "sendMessage": "Send Message",
+      "sending": "Sending...",
+      "success": "Message sent successfully!",
+      "thankYou": "Thank you for reaching out to us.",
+      "responseTime": "We will respond within 2 hours during business hours.",
+      "error": "There was an error submitting your form. Please email us directly at info@fynteq.com"
+    }
+  },
+  "cookies": {
+    "message": "We use cookies to enhance your experience and analyze our traffic. By clicking \"Accept\", you consent to our use of cookies.",
+    "accept": "Accept",
+    "decline": "Decline"
+  },
+  "footer": {
+    "description": "Expert payment integration specialists. Get your payment gateway live in 3-7 days with PCI compliance and rapid, reliable implementations.",
+    "services": "Services",
+    "company": "Company",
+    "about": "About",
+    "technology": "Technology",
+    "stayUpdated": "Stay Updated",
+    "newsletterDesc": "Get the latest payment integration tips and industry insights.",
+    "subscribe": "Subscribe",
+    "subscribed": "Subscribed successfully!",
+    "emailPlaceholder": "Enter your email",
+    "subscribeError": "Failed to subscribe. Please try again.",
+    "businessHours": "Mon-Fri 9am - 6pm",
+    "followLinkedIn": "Follow us on LinkedIn",
+    "privacyPolicy": "Privacy Policy",
+    "termsOfService": "Terms of Service",
+    "cookiePolicy": "Cookie Policy",
+    "refundPolicy": "Refund Policy",
+    "security": "Security",
+    "imprint": "Imprint",
+    "copyright": "© 2024 Fynteq. All rights reserved."
+  },
+  "chatWidget": {
+    "title": "Fynteq Support",
+    "onlineNow": "Online now",
+    "welcomeMessage": "Hi! I'm here to help with your payment integration questions. How can I assist you today?",
+    "getQuote": {
+      "title": "Get a quote for my project",
+      "description": "Get pricing in 30 seconds"
+    },
+    "scheduleConsultation": {
+      "title": "Schedule a consultation",
+      "description": "Free 30-minute discovery call"
+    },
+    "technicalSupport": {
+      "title": "Technical support",
+      "description": "Get help with existing integration"
+    },
+    "responseTime": "Typical response time: < 2 minutes"
+  },
+  "forms": {
+    "starterForm": {
+      "title": "Starter Package - Project Details",
+      "subtitle": "Tell us about your project to get started",
+      "businessName": "Business Name",
+      "website": "Website URL",
+      "industry": "Industry",
+      "currentPayment": "Current Payment System",
+      "monthlyVolume": "Monthly Transaction Volume",
+      "goals": "Project Goals",
+      "timeline": "Preferred Timeline",
+      "submit": "Submit Details",
+      "submitting": "Submitting...",
+      "success": "Details submitted successfully!"
+    },
+    "growthForm": {
+      "title": "Growth Package - Project Details", 
+      "subtitle": "Tell us about your growing business needs",
+      "businessName": "Business Name",
+      "website": "Website URL",
+      "industry": "Industry",
+      "currentPayment": "Current Payment System",
+      "monthlyVolume": "Monthly Transaction Volume",
+      "advancedFeatures": "Advanced Features Needed",
+      "goals": "Project Goals",
+      "timeline": "Preferred Timeline",
+      "submit": "Submit Details",
+      "submitting": "Submitting...",
+      "success": "Details submitted successfully!"
+    },
+    "scaleForm": {
+      "title": "Scale Package - Project Details",
+      "subtitle": "Tell us about your enterprise requirements",
+      "businessName": "Business Name", 
+      "website": "Website URL",
+      "industry": "Industry",
+      "currentPayment": "Current Payment System",
+      "monthlyVolume": "Monthly Transaction Volume",
+      "enterpriseFeatures": "Enterprise Features Needed",
+      "goals": "Project Goals",
+      "timeline": "Preferred Timeline",
+      "submit": "Submit Details",
+      "submitting": "Submitting...",
+      "success": "Details submitted successfully!"
+    }
+  },
+  "blog": {
+    "title": "Payment Integration <span class=\"gradient-text\">Blog</span>",
+    "subtitle": "Expert insights, tutorials, and best practices for payment processing, SaaS billing, and e-commerce integration.",
+    "preview": {
+      "title": "Latest Payment Integration Insights",
+      "subtitle": "Stay updated with expert tips, best practices, and industry insights for payment integration."
+    },
+    "readMore": "Read More",
+    "backToBlog": "Back to Blog",
+    "moreArticles": "More Articles",
+    "exploreLibrary": "Explore our complete library of payment integration guides, tutorials, and industry insights.",
+    "browseAll": "Browse All Articles",
+    "categories": {
+      "all": "All",
+      "paymentIntegration": "Payment Integration",
+      "saasBilling": "SaaS Billing",
+      "security": "Security",
+      "international": "International Payments",
+      "paymentGateways": "Payment Gateways",
+      "uxDesign": "UX Design"
+    },
+    "posts": [
+      {
+        "id": 1,
+        "title": "Stripe vs PayPal vs Square: Which Payment Gateway is Best for Your Business?",
+        "slug": "stripe-vs-paypal-vs-square-comparison",
+        "excerpt": "Comprehensive comparison of the top payment gateways. Learn the pros, cons, and pricing of Stripe, PayPal, and Square to choose the best solution for your business.",
+        "category": "Zahlungsgateways",
+        "date": "2024-01-15",
+        "readTime": "8 min read",
+        "tags": ["Stripe", "PayPal", "Square", "Payment Gateway", "Comparison", "Pricing"]
+      },
+      {
+        "id": 2,
+        "title": "Stripe API Integration: Complete Developer Guide for 2024",
+        "slug": "stripe-api-integration-developer-guide",
+        "excerpt": "Step-by-step guide to integrating Stripe payments into your application. Learn best practices, security considerations, and advanced features.",
+        "category": "Payment Gateway Integration",
+        "date": "2024-01-10",
+        "readTime": "12 min read",
+        "tags": ["Stripe", "API", "Integration", "Developer Guide", "Payments", "JavaScript"]
+      },
+      {
+        "id": 3,
+        "title": "How to Set Up Recurring Billing and Subscription Payments",
+        "slug": "recurring-billing-subscription-payments-setup",
+        "excerpt": "Complete guide to implementing subscription billing with Stripe, PayPal, and other payment processors. Includes dunning management and failed payment handling.",
+        "category": "SaaS Zahlungsabwicklung",
+        "date": "2024-01-05",
+        "readTime": "10 min read",
+        "tags": ["Subscription", "Recurring Billing", "SaaS", "Stripe", "PayPal", "Dunning"]
+      },
+      {
+        "id": 4,
+        "title": "SaaS Billing Models: Freemium, Usage-Based, and Tiered Pricing",
+        "slug": "saas-billing-models-freemium-usage-based-tiered",
+        "excerpt": "Explore different SaaS billing models and learn how to implement them effectively. Compare freemium, usage-based, and tiered pricing strategies.",
+        "category": "SaaS Zahlungsabwicklung",
+        "date": "2024-01-01",
+        "readTime": "9 min read",
+        "tags": ["SaaS", "Billing Models", "Freemium", "Usage-Based", "Tiered Pricing", "Revenue"]
+      },
+      {
+        "id": 5,
+        "title": "Best Payment Processing Solutions for E-commerce: 2024 Guide",
+        "slug": "best-payment-processing-ecommerce-2024",
+        "excerpt": "Top payment processing solutions for e-commerce businesses. Compare features, pricing, and integration options for online stores.",
+        "category": "Payment Gateway Integration",
+        "date": "2023-12-28",
+        "readTime": "11 min read",
+        "tags": ["E-commerce", "Payment Processing", "Online Store", "Merchant Services", "Checkout"]
+      },
+      {
+        "id": 6,
+        "title": "Credit Card Processing Fees: Stripe vs PayPal vs Square",
+        "slug": "credit-card-processing-fees-comparison",
+        "excerpt": "Detailed breakdown of credit card processing fees across major payment processors. Learn how to minimize costs and optimize your payment strategy.",
+        "category": "Zahlungsgateways",
+        "date": "2023-12-25",
+        "readTime": "7 min read",
+        "tags": ["Processing Fees", "Credit Cards", "Stripe", "PayPal", "Square", "Costs"]
+      },
+      {
+        "id": 7,
+        "title": "Payment Security and PCI DSS Compliance: Complete Guide",
+        "slug": "payment-security-pci-dss-compliance-guide",
+        "excerpt": "Everything you need to know about payment security and PCI DSS compliance. Protect your customers' data and avoid costly penalties.",
+        "category": "Payment Gateway Sicherheit",
+        "date": "2023-12-20",
+        "readTime": "14 min read",
+        "tags": ["Security", "PCI DSS", "Compliance", "Data Protection", "Fraud Prevention"]
+      },
+      {
+        "id": 8,
+        "title": "Fraud Prevention and Payment Security: Complete Guide",
+        "slug": "fraud-prevention-payment-security-guide",
+        "excerpt": "Comprehensive guide to preventing payment fraud and securing your payment processing. Learn about fraud detection tools and security best practices.",
+        "category": "Payment Gateway Sicherheit",
+        "date": "2023-12-15",
+        "readTime": "13 min read",
+        "tags": ["Fraud Prevention", "Security", "Risk Management", "Payment Protection", "Detection"]
+      },
+      {
+        "id": 9,
+        "title": "Checkout Optimization: How to Reduce Cart Abandonment",
+        "slug": "checkout-optimization-reduce-cart-abandonment",
+        "excerpt": "Proven strategies to optimize your checkout process and reduce cart abandonment rates. Increase conversions with better UX design.",
+        "category": "Payment Gateway UX",
+        "date": "2023-12-12",
+        "readTime": "9 min read",
+        "tags": ["Checkout", "Cart Abandonment", "UX Design", "Conversion", "Optimization"]
+      },
+      {
+        "id": 10,
+        "title": "Mobile Payment Design: Optimizing Checkout for Mobile",
+        "slug": "mobile-payment-design-optimization",
+        "excerpt": "Best practices for designing mobile payment experiences. Learn how to create seamless mobile checkout flows that convert.",
+        "category": "Payment Gateway UX",
+        "date": "2023-12-10",
+        "readTime": "8 min read",
+        "tags": ["Mobile", "Payment Design", "UX", "Checkout", "Mobile Commerce", "Responsive"]
+      },
+      {
+        "id": 11,
+        "title": "International Payment Processing: Multi-Currency and Cross-Border",
+        "slug": "international-payment-processing-multi-currency",
+        "excerpt": "Complete guide to international payment processing. Learn about multi-currency support, cross-border fees, and global payment methods.",
+        "category": "Internationale Payment Gateway",
+        "date": "2023-12-08",
+        "readTime": "11 min read",
+        "tags": ["International", "Multi-Currency", "Cross-Border", "Global Payments", "Exchange Rates"]
+      },
+      {
+        "id": 12,
+        "title": "Global Payment Methods: Local Payment Solutions for International Expansion",
+        "slug": "global-payment-methods-local-solutions-international-expansion",
+        "excerpt": "Discover local payment methods and solutions for international business expansion. Learn about regional payment preferences and compliance requirements.",
+        "category": "Internationale Payment Gateway",
+        "date": "2023-12-05",
+        "readTime": "12 min read",
+        "tags": ["Global Payments", "Local Payment Methods", "International Expansion", "Regional Payments", "Compliance"]
+      }
+    ]
+  },
+  "comparison": {
+    "title": "Why choose Fynteq over other options?",
+    "subtitle": "See how we compare to freelancers, agencies, and DIY solutions.",
+    "table": {
+      "feature": "Feature",
+      "freelancers": "Freelancers",
+      "agencies": "Agencies",
+      "price": "Price",
+      "fynteqPrice": "€299-1,999",
+      "freelancerPrice": "€2,000-5,000",
+      "agencyPrice": "€5,000-15,000",
+      "freeTimeCost": "Free (time cost)",
+      "timeline": "Timeline",
+      "expertise": "Expertise",
+      "variable": "Variable",
+      "general": "General",
+      "learningCurve": "Learning curve",
+      "support": "Support",
+      "limited": "Limited",
+      "projectBased": "Project-based",
+      "selfReliant": "Self-reliant",
+      "security": "Security",
+      "unknown": "Unknown",
+      "usually": "Usually",
+      "yourRisk": "Your risk",
+      "scalability": "Scalability",
+      "basic": "Basic",
+      "good": "Good",
+      "limited": "Limited"
+    },
+    "whyWins": {
+      "title": "Why Fynteq Wins",
+      "bestValue": {
+        "title": "Best Value",
+        "description": "Professional quality at a fraction of agency costs"
+      },
+      "fastestDelivery": {
+        "title": "Fastest Delivery",
+        "description": "Get live in days, not weeks or months"
+      },
+      "guaranteedQuality": {
+        "title": "Guaranteed Quality",
+        "description": "30-day warranty and ongoing support"
+      }
+    }
+  },
+  "responsibility": {
+    "moneyBack": {
+      "title": "Money-Back Guarantee",
+      "description": "If we don't deliver on time or meet your requirements, we'll refund your payment in full."
+    },
+    "fullResponsibility": {
+      "title": "Full Responsibility",
+      "description": "We handle all security, compliance, and technical complexities. You focus on your business."
+    },
+    "ongoingSupport": {
+      "title": "Ongoing Support",
+      "description": "30 days free support included, plus optional ongoing maintenance plans for peace of mind."
+    }
+  },
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "success": "Success",
+    "close": "Close",
+    "cancel": "Cancel",
+    "save": "Save",
+    "edit": "Edit",
+    "delete": "Delete",
+    "view": "View",
+    "learnMore": "Learn More"
+  },
+  "exploreMore": {
+    "title": "Explore More Content",
+    "successStories": {
+      "title": "Success Stories",
+      "description": "See how we've helped businesses increase revenue by 300%+ with expert payment integration.",
+      "link": "View Case Studies →"
+    },
+    "ourServices": {
+      "title": "Our Services", 
+      "description": "Professional payment integration packages starting at €299. Get your payment gateway live in 3-7 days.",
+      "link": "View Pricing →"
+    },
+    "getExpertHelp": {
+      "title": "Get Expert Help",
+      "description": "Need help with your payment integration? Schedule a free consultation with our experts.",
+      "link": "Contact Us →"
+    }
+  },
+  "cookies": {
+    "title": "Cookie Policy",
+    "lastUpdated": "Last updated",
+    "lastUpdatedDate": "October 2, 2024",
+    "whatAreCookies": "What Are Cookies",
+    "whatAreCookiesDescription": "Cookies are small text files that are placed on your computer or mobile device when you visit our website.",
+    "howWeUseCookies": "How We Use Cookies",
+    "howWeUseCookiesDescription": "We use cookies to improve your experience on our website, analyze site traffic, and personalize content.",
+    "typesOfCookies": "Types of Cookies",
+    "typesOfCookiesDescription": "We use essential cookies, analytics cookies, and marketing cookies to provide the best possible experience.",
+    "managingCookies": "Managing Cookies",
+    "managingCookiesDescription": "You can control and manage cookies through your browser settings. However, disabling cookies may affect website functionality.",
+    "contactUs": "Contact Us",
+    "contactUsDescription": "If you have any questions about our Cookie Policy, please contact us at:",
+    "email": "Email"
+  },
+  "privacy": {
+    "title": "Privacy Policy",
+    "lastUpdated": "Last updated",
+    "lastUpdatedDate": "October 2, 2024",
+    "informationWeCollect": "1. Information We Collect",
+    "informationWeCollectDescription": "We collect information you provide directly to us, such as when you create an account, make a purchase, or contact us for support.",
+    "howWeUseInformation": "2. How We Use Your Information",
+    "howWeUseInformationDescription": "We use the information we collect to provide, maintain, and improve our services, process transactions, and communicate with you.",
+    "informationSharing": "3. Information Sharing",
+    "informationSharingDescription": "We do not sell, trade, or otherwise transfer your personal information to third parties without your consent, except as described in this policy.",
+    "dataSecurity": "4. Data Security",
+    "dataSecurityDescription": "We implement appropriate security measures to protect your personal information against unauthorized access, alteration, disclosure, or destruction.",
+    "contactUs": "5. Contact Us",
+    "contactUsDescription": "If you have any questions about this Privacy Policy, please contact us at:",
+    "email": "Email"
+  },
+  "terms": {
+    "title": "Terms of Service",
+    "lastUpdated": "Last updated",
+    "lastUpdatedDate": "October 2, 2024",
+    "acceptanceOfTerms": "1. Acceptance of Terms",
+    "acceptanceOfTermsDescription": "By accessing and using our services, you accept and agree to be bound by the terms and provision of this agreement.",
+    "serviceDescription": "2. Service Description",
+    "serviceDescriptionDescription": "Fynteq provides payment integration services including but not limited to Stripe, PayPal, and other payment gateway integrations.",
+    "paymentTerms": "3. Payment Terms",
+    "paymentTermsDescription": "All payments are due upon completion of services. We offer fixed-price packages with guaranteed delivery timelines.",
+    "limitationOfLiability": "4. Limitation of Liability",
+    "limitationOfLiabilityDescription": "In no event shall Fynteq be liable for any indirect, incidental, special, consequential, or punitive damages.",
+    "contactInformation": "5. Contact Information",
+    "contactInformationDescription": "For questions about these Terms of Service, please contact us at:",
+    "email": "Email"
+  },
+  "refund": {
+    "title": "Refund Policy",
+    "lastUpdated": "Last updated",
+    "lastUpdatedDate": "October 2, 2024",
+    "moneyBackGuarantee": "Money-Back Guarantee",
+    "moneyBackGuaranteeDescription": "We offer a 100% money-back guarantee if we fail to deliver your payment integration within the agreed timeline or meet your specified requirements.",
+    "refundEligibility": "Refund Eligibility",
+    "refundEligibilityDescription": "Refunds are available within 30 days of project completion if the delivered solution does not meet the agreed specifications.",
+    "refundProcess": "Refund Process",
+    "refundProcessDescription": "To request a refund, please contact us with your project details and reason for the refund request. We will review and process refunds within 5-7 business days.",
+    "nonRefundableItems": "Non-Refundable Items",
+    "nonRefundableItemsDescription": "Refunds are not available for completed projects that meet the agreed specifications or for change of mind after project completion.",
+    "contactUs": "Contact Us",
+    "contactUsDescription": "For refund requests or questions about this policy, please contact us at:",
+    "email": "Email"
+  },
+  "security": {
+    "title": "Security & Compliance",
+    "lastUpdated": "Last updated",
+    "lastUpdatedDate": "October 2, 2024",
+    "pciDssCompliance": "PCI DSS Compliance",
+    "pciDssComplianceDescription": "We implement PCI-aware solutions. We don't store card data; processing happens on Stripe/PayPal.",
+    "dataEncryption": "Data Encryption",
+    "dataEncryptionDescription": "All data is encrypted using industry-standard 256-bit SSL encryption both in transit and at rest.",
+    "securityMeasures": "Security Measures",
+    "securityMeasuresDescription": "We implement comprehensive security measures including regular security audits, vulnerability assessments, and penetration testing.",
+    "uptimeGuarantee": "Uptime Guarantee",
+    "uptimeGuaranteeDescription": "We provide rapid, reliable implementations with production readiness checks to ensure service availability.",
+    "contactSecurityTeam": "Contact Security Team",
+    "contactSecurityTeamDescription": "For security-related questions or to report security issues, please contact our security team at:",
+    "securityTeam": "Security Team"
+  },
+  "imprint": {
+    "title": "Imprint",
+    "subtitle": "Legal information and company details",
+    "companyInformation": "Company Information",
+    "companyName": "Company Name",
+    "companyNameValue": "Fynteq (Part of Way Technologies Corp.)",
+    "parentCompany": "Parent Company",
+    "parentCompanyValue": "Way Technologies Corp.",
+    "businessType": "Business Type",
+    "businessTypeValue": "Payment Integration Services & Fintech Consulting",
+    "companyDescription": "Company Description",
+    "companyDescriptionValue": "Fynteq is a fintech technology brand under Way Technologies Corp., specializing in embedded payment solutions, custom software development, and expert fintech consulting. We empower small and medium-sized businesses with seamless payment integration, secure payment gateways, and scalable fintech infrastructure to drive growth and digital transformation.",
+    "contactInformation": "Contact Information",
+    "email": "Email",
+    "website": "Website",
+    "serviceArea": "Service Area",
+    "serviceAreaValue": "Worldwide - Remote Services",
+    "servicesProvided": "Services Provided",
+    "service1": "Payment gateway integration services",
+    "service2": "Stripe and PayPal integration",
+    "service3": "Subscription billing setup",
+    "service4": "E-commerce payment solutions",
+    "service5": "Marketplace payment integration",
+    "service6": "Fintech consulting and strategy",
+    "service7": "Payment system development",
+    "service8": "PCI compliance assistance",
+    "professionalStandards": "Professional Standards",
+    "standard1": "PCI-aware development practices",
+    "standard2": "Industry-standard security protocols",
+    "standard3": "Professional service delivery",
+    "standard4": "Confidentiality and data protection",
+    "standard5": "Quality assurance and testing",
+    "standard6": "Ongoing support and maintenance",
+    "disclaimer": "Disclaimer",
+    "disclaimerText1": "The information provided on this website is for general informational purposes only. While we strive to keep the information up-to-date and correct, we make no representations or warranties of any kind, express or implied, about the completeness, accuracy, reliability, suitability, or availability of the website or the information, products, services, or related graphics contained on the website.",
+    "disclaimerText2": "Any reliance you place on such information is therefore strictly at your own risk. We are not liable for any loss or damage arising from the use of our services or information provided on this website.",
+    "contactForLegalMatters": "Contact for Legal Matters",
+    "legalContactText": "For any legal inquiries or concerns, please contact us at:",
+    "legalResponseTime": "We will respond to all legal inquiries within 48 hours during business days."
+  }
+}

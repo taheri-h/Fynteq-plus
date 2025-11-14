@@ -1,0 +1,32 @@
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://fynteq.com/sitemap.xml
+
+# Crawl-delay
+Crawl-delay: 1
+
+# Disallow admin areas (if any)
+Disallow: /admin/
+Disallow: /private/
+
+# Allow all content
+Allow: /privacy
+Allow: /terms
+Allow: /cookies
+Allow: /refund
+Allow: /security
+Allow: /imprint
+Allow: /starter-form
+Allow: /growth-form
+Allow: /scale-form
+Allow: /blog
+Allow: /blog/*
+Allow: /case-studies
+Allow: /case-studies/*
+
+# Block search engines from indexing form pages (optional)
+# Disallow: /starter-form
+# Disallow: /growth-form  
+# Disallow: /scale-form

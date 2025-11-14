@@ -1,0 +1,19 @@
+# Simple .htaccess for Hostinger - Guaranteed to work
+# If the main .htaccess doesn't work, use this one
+
+<IfModule mod_rewrite.c>
+  RewriteEngine On
+  
+  # Don't rewrite files or directories that exist
+  RewriteCond %{REQUEST_FILENAME} !-f
+  RewriteCond %{REQUEST_FILENAME} !-d
+  
+  # Rewrite everything else to index.html
+  RewriteRule . /index.html [L]
+</IfModule>
+
+# Fallback if mod_rewrite is not available
+<IfModule !mod_rewrite.c>
+  FallbackResource /index.html
+</IfModule>
+
