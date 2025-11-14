@@ -1,6 +1,7 @@
 import React from 'react';
 import { useTranslation } from 'react-i18next';
 import { trackButtonClick, trackConsultationClick } from '../../utils/analytics';
+import TypingEffect from '../TypingEffect';
 
 const HeroSection: React.FC = () => {
   const { t } = useTranslation();
@@ -9,8 +10,13 @@ const HeroSection: React.FC = () => {
     <section className="py-24 bg-white">
       <div className="max-w-5xl mx-auto px-6">
         <div className="text-center max-w-3xl mx-auto">
-          <h1 className="text-6xl md:text-7xl font-semibold text-slate-900 mb-8 leading-tight tracking-tight">
-            {t('hero.title')}
+          <h1 className="text-6xl md:text-7xl font-semibold text-slate-900 mb-8 leading-tight tracking-tight min-h-[1.2em]">
+            <TypingEffect 
+              text={t('hero.title')} 
+              speed={150}
+              loopDelay={10000}
+              className="inline-block"
+            />
           </h1>
           <p className="text-xl text-slate-600 leading-relaxed mb-6 max-w-2xl mx-auto">
             {t('hero.subtitle')}
