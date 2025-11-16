@@ -64,8 +64,18 @@ cd backend
 node -e "require('dotenv').config(); const mongoose = require('mongoose'); mongoose.connect(process.env.MONGODB_URI, {dbName: process.env.MONGODB_DB}).then(() => {console.log('✅ Connected!'); process.exit(0);}).catch(err => {console.error('❌ Error:', err.message); process.exit(1);});"
 ```
 
-## Security Note
+## 🔒 Security Note
 
-⚠️ **Never commit your `.env` file to Git!** It contains sensitive credentials.
-The `.env` file is already in `.gitignore` for safety.
+⚠️ **NEVER commit your `.env` file to Git!** It contains sensitive credentials.
+- The `.env` file is already in `.gitignore` for safety.
+- Never create files with real credentials in the repository.
+- Always use placeholders (`username:password`) in documentation.
 
+## ⚠️ If Credentials Were Exposed
+
+If you accidentally committed credentials to Git:
+
+1. **CHANGE YOUR PASSWORD IMMEDIATELY** - This is the most important step!
+2. Remove the file from Git history (see `SECURITY_FIX.md`)
+3. Update `.env` with new credentials
+4. Never commit credentials again

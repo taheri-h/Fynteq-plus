@@ -1,6 +1,22 @@
 import React, { createContext, useContext, useState, useEffect, ReactNode } from 'react';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001/api';
+// Determine API URL based on environment
+const getApiUrl = () => {
+  // If environment variable is set, use it
+  if (process.env.REACT_APP_API_URL) {
+    return process.env.REACT_APP_API_URL;
+  }
+  
+  // In production (not localhost), use relative path
+  if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+    return '/api';
+  }
+  
+  // In development (localhost), use local backend
+  return 'http://localhost:5001/api';
+};
+
+const API_URL = getApiUrl();
 
 interface User {
   id: string;

@@ -18,7 +18,27 @@ connectDB();
 
 // Middleware
 app.use(cors({
-  origin: process.env.FRONTEND_URL || 'http://localhost:3000',
+  origin: function (origin, callback) {
+    // Allow requests with no origin (like mobile apps or curl requests)
+    if (!origin) return callback(null, true);
+    
+    // Get allowed origins from environment or use defaults
+    const allowedOrigins = process.env.FRONTEND_URL 
+      ? [process.env.FRONTEND_URL]
+      : ['http://localhost:3000', 'https://fynteq-com-357877.hostingersite.com', 'https://fynteq.com'];
+    
+    // Check if origin is allowed
+    if (allowedOrigins.some(allowed => origin.includes(allowed.replace(/^https?:\/\//, '').replace(/^www\./, '')))) {
+      callback(null, true);
+    } else {
+      // In production, allow any origin from the same domain
+      if (process.env.NODE_ENV === 'production') {
+        callback(null, true);
+      } else {
+        callback(new Error('Not allowed by CORS'));
+      }
+    }
+  },
   credentials: true,
   methods: ['GET', 'POST', 'PUT', 'DELETE', 'OPTIONS'],
   allowedHeaders: ['Content-Type', 'Authorization'],

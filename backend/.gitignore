@@ -1,5 +1,13 @@
 node_modules/
 .env
+.env.*
+*.env
 *.log
 .DS_Store
 test-*.js
+
+# NEVER commit files with real credentials
+*MONGODB_COMPASS*.md
+*credentials*.md
+*password*.md
+*secret*.md

@@ -2,7 +2,15 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate, useSearchParams, Link } from 'react-router-dom';
 import { Helmet } from 'react-helmet-async';
 
-const API_URL = process.env.REACT_APP_API_URL || 'http://localhost:5001/api';
+// Determine API URL based on environment
+const getApiUrl = () => {
+  if (process.env.REACT_APP_API_URL) return process.env.REACT_APP_API_URL;
+  if (window.location.hostname !== 'localhost' && window.location.hostname !== '127.0.0.1') {
+    return '/api';
+  }
+  return 'http://localhost:5001/api';
+};
+const API_URL = getApiUrl();
 
 const ResetPassword: React.FC = () => {
   const navigate = useNavigate();
