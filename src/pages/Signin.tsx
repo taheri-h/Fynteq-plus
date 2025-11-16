@@ -83,9 +83,17 @@ const Signin: React.FC = () => {
             </div>
 
             <div>
-              <label htmlFor="password" className="block text-sm font-medium text-slate-700 mb-2">
-                Password *
-              </label>
+              <div className="flex items-center justify-between mb-2">
+                <label htmlFor="password" className="block text-sm font-medium text-slate-700">
+                  Password *
+                </label>
+                <Link 
+                  to="/forgot-password" 
+                  className="text-sm text-slate-600 hover:text-slate-900 hover:underline"
+                >
+                  Forgot password?
+                </Link>
+              </div>
               <input
                 type="password"
                 id="password"

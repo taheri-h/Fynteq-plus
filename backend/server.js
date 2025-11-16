@@ -8,6 +8,7 @@ const authRoutes = require('./routes/auth');
 const paymentRoutes = require('./routes/payments');
 const setupRoutes = require('./routes/setup');
 const providerRoutes = require('./routes/providers');
+const passwordResetRoutes = require('./routes/passwordReset');
 
 // Initialize Express app
 const app = express();
@@ -33,6 +34,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/payments', paymentRoutes);
 app.use('/api/setup', setupRoutes);
 app.use('/api/providers', providerRoutes);
+app.use('/api/password-reset', passwordResetRoutes);
 
 // 404 handler
 app.use((req, res) => {

@@ -19,6 +19,8 @@ import CaseStudies from '../pages/CaseStudies';
 import CaseStudyDetail from '../pages/CaseStudyDetail';
 import Signup from '../pages/Signup';
 import Signin from '../pages/Signin';
+import ForgotPassword from '../pages/ForgotPassword';
+import ResetPassword from '../pages/ResetPassword';
 import Payment from '../pages/Payment';
 import Dashboard from '../pages/Dashboard';
 import Setup from '../pages/Setup';
@@ -49,6 +51,8 @@ const LanguageAwareRoutes: React.FC = () => {
       <Route path={ROUTES.CASE_STUDY_DETAIL} element={<CaseStudyDetail />} />
       <Route path={ROUTES.SIGNUP} element={<Signup />} />
       <Route path={ROUTES.SIGNIN} element={<Signin />} />
+      <Route path="/forgot-password" element={<ForgotPassword />} />
+      <Route path="/reset-password" element={<ResetPassword />} />
       <Route 
         path={ROUTES.PAYMENT} 
         element={
