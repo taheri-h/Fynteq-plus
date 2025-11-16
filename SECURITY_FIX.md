@@ -98,9 +98,9 @@ git push
 
 ## 🚨 URGENT: Change MongoDB Password
 
-**Your current password is exposed:**
+**Your credentials were exposed:**
 - Username: `wayfinance`
-- Password: `P@ssw0rd1364$`
+- Password: `[REDACTED - CHANGE IMMEDIATELY]`
 
 **Change it immediately:**
 1. Connect to MongoDB
