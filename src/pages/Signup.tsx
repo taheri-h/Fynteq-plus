@@ -40,17 +40,17 @@ const Signup: React.FC = () => {
 
   // SaaS Package Info
   const saasPackageInfo: Record<string, { name: string; price: string }> = {
-    'starter': { name: 'Starter', price: '€29' },
-    'pro': { name: 'Pro', price: '€79' },
-    'scale': { name: 'Scale', price: '€149' }
+    'starter': { name: 'Starter', price: '$29' },
+    'pro': { name: 'Pro', price: '$79' },
+    'scale': { name: 'Scale', price: '$149' }
   };
 
   // Setup Package Info
   const setupPackageInfo: Record<string, { name: string; price: string; description: string }> = {
-    'checkout': { name: 'Stripe Checkout Setup', price: '€299', description: 'Get paid online in 2–3 days' },
-    'subscriptions': { name: 'Subscriptions Setup', price: '€749', description: 'Turn one-time buyers into recurring revenue' },
-    'crm': { name: 'CRM Integration', price: '€1499', description: 'Connect payments with your CRM in 7–10 days' },
-    'marketplace': { name: 'Marketplace Setup', price: 'from €1999', description: 'Build your platform like Etsy or Airbnb' }
+    'checkout': { name: 'Stripe Checkout Setup', price: '$299', description: 'Get paid online in 2–3 days' },
+    'subscriptions': { name: 'Subscriptions Setup', price: '$749', description: 'Turn one-time buyers into recurring revenue' },
+    'crm': { name: 'CRM Integration', price: '$1499', description: 'Connect payments with your CRM in 7–10 days' },
+    'marketplace': { name: 'Marketplace Setup', price: 'from $1999', description: 'Build your platform like Etsy or Airbnb' }
   };
 
   // Determine which package info to use
@@ -82,8 +82,8 @@ const Signup: React.FC = () => {
   // For setup packages, price is fixed (no monthly/yearly)
   // For SaaS packages, calculate based on billing
   const monthlyPrice = isSetupPackage 
-    ? parseInt(currentPackage.price.replace(/[€,from\s]/gi, ''))
-    : parseInt(currentPackage.price.replace('€', ''));
+    ? parseInt(currentPackage.price.replace(/[$,from\s]/gi, ''))
+    : parseInt(currentPackage.price.replace('$', ''));
   const finalPrice = isSetupPackage 
     ? monthlyPrice 
     : (billing === 'yearly' ? Math.round(monthlyPrice * 12 * 0.66) : monthlyPrice);
@@ -167,7 +167,7 @@ const Signup: React.FC = () => {
         // Handle Setup service - redirect to the intended setup form
         navigate(redirectPath, { replace: true });
       } else if (finalPackageName && ['starter', 'pro', 'scale'].includes(finalPackageName)) {
-        // Handle SaaS service (home page packages) - go to payment
+        // Handle SaaS service (home page packages)
         // Get the newly created user from AuthContext
         const currentUser = JSON.parse(localStorage.getItem('authUser') || '{}');
         const userData = {
@@ -183,7 +183,35 @@ const Signup: React.FC = () => {
         // Store package in user-specific localStorage
         const userPackageKey = `userPackage_${currentUser.id}`;
         localStorage.setItem(userPackageKey, finalPackageName);
-        navigate(`/payment?package=${finalPackageName}&billing=${billing}`);
+        
+        // Stripe payment links for all plans
+        const stripeLinks: Record<string, { monthly: string; yearly: string }> = {
+          'starter': {
+            monthly: 'https://buy.stripe.com/6oU9AV2Gg3MB0vU0iu8Zq0b',
+            yearly: 'https://buy.stripe.com/eVq3cx3Kk96VdiGghs8Zq0e'
+          },
+          'pro': {
+            monthly: 'https://buy.stripe.com/dRm4gBdkU4QFa6ufdo8Zq0c',
+            yearly: 'https://buy.stripe.com/14AeVf0y80Ap5Qec1c8Zq0f'
+          },
+          'scale': {
+            monthly: 'https://buy.stripe.com/8x200l5Ss6YN1zYc1c8Zq0d',
+            yearly: 'https://buy.stripe.com/dRmcN71Cc82R3I6fdo8Zq0g'
+          }
+        };
+        
+        // Check if we have a Stripe link for this plan and billing cycle
+        const packageKey = finalPackageName.toLowerCase();
+        const billingKey = billing as 'monthly' | 'yearly';
+        const stripeLink = stripeLinks[packageKey]?.[billingKey];
+        
+        if (stripeLink) {
+          // Redirect directly to Stripe checkout
+          window.location.href = stripeLink;
+        } else {
+          // No Stripe link available, go to payment page
+          navigate(`/payment?package=${finalPackageName}&billing=${billing}`);
+        }
       } else {
         // Default redirect to dashboard
         navigate('/dashboard', { replace: true });
@@ -249,7 +277,7 @@ const Signup: React.FC = () => {
                   <span className="text-2xl font-bold text-slate-900">
                     {isSetupPackage 
                       ? currentPackage.price 
-                      : `€${finalPrice.toLocaleString()}/${billing === 'yearly' ? 'yr' : 'mo'}`
+                      : `$${finalPrice.toLocaleString()}/${billing === 'yearly' ? 'yr' : 'mo'}`
                     }
                   </span>
                 </div>

@@ -10,12 +10,37 @@ const PricingSection: React.FC = () => {
   const { isAuthenticated } = useAuth();
   const [isYearly, setIsYearly] = useState(false);
   
+  // Stripe payment links for all plans
+  const stripeLinks: Record<string, { monthly: string; yearly: string }> = {
+    'starter': {
+      monthly: 'https://buy.stripe.com/6oU9AV2Gg3MB0vU0iu8Zq0b',
+      yearly: 'https://buy.stripe.com/eVq3cx3Kk96VdiGghs8Zq0e'
+    },
+    'pro': {
+      monthly: 'https://buy.stripe.com/dRm4gBdkU4QFa6ufdo8Zq0c',
+      yearly: 'https://buy.stripe.com/14AeVf0y80Ap5Qec1c8Zq0f'
+    },
+    'scale': {
+      monthly: 'https://buy.stripe.com/8x200l5Ss6YN1zYc1c8Zq0d',
+      yearly: 'https://buy.stripe.com/dRmcN71Cc82R3I6fdo8Zq0g'
+    }
+  };
+  
   // Calculate yearly price (34% discount = 66% of monthly * 12)
   const getPrice = (monthlyPrice: string) => {
     if (!isYearly) return monthlyPrice;
-    const numericPrice = parseInt(monthlyPrice.replace('€', ''));
+    const numericPrice = parseInt(monthlyPrice.replace('$', ''));
     const yearlyPrice = Math.round(numericPrice * 12 * 0.66);
-    return `€${yearlyPrice}`;
+    return `$${yearlyPrice}`;
+  };
+  
+  // Get Stripe link for a package and billing cycle
+  const getStripeLink = (packageName: string, billing: 'monthly' | 'yearly'): string | null => {
+    const packageKey = packageName.toLowerCase();
+    if (stripeLinks[packageKey] && stripeLinks[packageKey][billing]) {
+      return stripeLinks[packageKey][billing];
+    }
+    return null;
   };
   
   return (
@@ -68,7 +93,7 @@ const PricingSection: React.FC = () => {
         </div>
 
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6">
-          {t('pricing.plans', { returnObjects: true }).map((plan: any, index: number) => (
+          {(t('pricing.plans', { returnObjects: true }) as any[]).map((plan: any, index: number) => (
             <div key={index} className={`card p-8 ${plan.popular ? 'border-slate-900 border-2' : ''}`}>
               {plan.popular && (
                 <div className="mb-4">
@@ -102,21 +127,53 @@ const PricingSection: React.FC = () => {
                 onClick={() => {
                   trackPricingView(plan.name);
                   const packageName = plan.name.toLowerCase().replace(/\s+/g, '-');
+                  const billing = isYearly ? 'yearly' : 'monthly';
+                  
                   if (!isAuthenticated) {
                     // Redirect to signup with package info
-                    navigate(`/signup?package=${packageName}&billing=${isYearly ? 'yearly' : 'monthly'}`);
+                    navigate(`/signup?package=${packageName}&billing=${billing}`);
                   } else {
-                    // If already authenticated, go directly to payment
-                    navigate(`/payment?package=${packageName}&billing=${isYearly ? 'yearly' : 'monthly'}`);
+                    // If already authenticated, check if user has a paid subscription
+                    const currentUser = JSON.parse(localStorage.getItem('authUser') || '{}');
+                    const userPaymentKey = `paymentData_${currentUser.id}`;
+                    const paymentData = sessionStorage.getItem(userPaymentKey);
+                    
+                    // Check if user has a completed payment (active subscription)
+                    let hasActiveSubscription = false;
+                    if (paymentData) {
+                      try {
+                        const data = JSON.parse(paymentData);
+                        hasActiveSubscription = data.paymentStatus === 'completed' && 
+                                                data.email === currentUser.email &&
+                                                ['starter', 'pro', 'scale'].includes(data.package);
+                      } catch (e) {
+                        // Ignore parsing errors
+                      }
+                    }
+                    
+                    // If user doesn't have active subscription, check if we have a Stripe link for this plan
+                    if (!hasActiveSubscription) {
+                      const stripeLink = getStripeLink(packageName, billing);
+                      if (stripeLink) {
+                        // Go directly to Stripe checkout
+                        window.location.href = stripeLink;
+                        return;
+                      }
+                    }
+                    
+                    // User has subscription or no Stripe link available, go to payment page
+                    navigate(`/payment?package=${packageName}&billing=${billing}`);
                   }
                 }}
                 className={`w-full py-3 px-6 rounded-lg font-medium text-center ${
-                  plan.popular 
-                    ? 'button-primary' 
-                    : 'button-secondary'
+                  plan.name === 'Starter' 
+                    ? 'button-secondary' 
+                    : plan.popular 
+                      ? 'button-primary' 
+                      : 'button-secondary'
                 }`}
               >
-                {plan.button}
+                Try Risk Free
               </button>
             </div>
           ))}

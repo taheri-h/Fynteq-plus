@@ -25,6 +25,32 @@ const Payment: React.FC = () => {
 
     if (!user) return;
 
+    // Stripe payment links for all plans
+    const stripeLinks: Record<string, { monthly: string; yearly: string }> = {
+      'starter': {
+        monthly: 'https://buy.stripe.com/6oU9AV2Gg3MB0vU0iu8Zq0b',
+        yearly: 'https://buy.stripe.com/eVq3cx3Kk96VdiGghs8Zq0e'
+      },
+      'pro': {
+        monthly: 'https://buy.stripe.com/dRm4gBdkU4QFa6ufdo8Zq0c',
+        yearly: 'https://buy.stripe.com/14AeVf0y80Ap5Qec1c8Zq0f'
+      },
+      'scale': {
+        monthly: 'https://buy.stripe.com/8x200l5Ss6YN1zYc1c8Zq0d',
+        yearly: 'https://buy.stripe.com/dRmcN71Cc82R3I6fdo8Zq0g'
+      }
+    };
+    
+    // Check if we have a Stripe link for this plan and billing cycle
+    const billingKey = billing as 'monthly' | 'yearly';
+    const stripeLink = stripeLinks[packageName]?.[billingKey];
+    
+    if (stripeLink) {
+      // Redirect directly to Stripe checkout
+      window.location.href = stripeLink;
+      return;
+    }
+
     // Get signup data from user-specific sessionStorage
     const userSignupKey = `signupData_${user.id}`;
     const stored = sessionStorage.getItem(userSignupKey);
@@ -35,12 +61,12 @@ const Payment: React.FC = () => {
         setSignupData(data);
       }
     }
-  }, [packageName, navigate, user]);
+  }, [packageName, billing, navigate, user]);
 
   const packageInfo: Record<string, { name: string; price: string }> = {
-    'starter': { name: 'Starter', price: '€29' },
-    'pro': { name: 'Pro', price: '€79' },
-    'scale': { name: 'Scale', price: '€149' }
+    'starter': { name: 'Starter', price: '$29' },
+    'pro': { name: 'Pro', price: '$79' },
+    'scale': { name: 'Scale', price: '$149' }
   };
 
   // Only proceed if it's a valid SaaS package
@@ -49,7 +75,7 @@ const Payment: React.FC = () => {
   }
 
   const currentPackage = packageInfo[packageName] || packageInfo['starter'];
-  const monthlyPrice = parseInt(currentPackage.price.replace('€', ''));
+  const monthlyPrice = parseInt(currentPackage.price.replace('$', ''));
   
   // Always calculate price based on package and billing (monthly/yearly subscription)
   const finalPrice = billing === 'yearly' ? Math.round(monthlyPrice * 12 * 0.66) : monthlyPrice;
@@ -64,7 +90,7 @@ const Payment: React.FC = () => {
     setIsProcessing(true);
 
     try {
-      // Here you would integrate with Stripe Checkout or PayPal
+      // Here you would integrate with Stripe Checkout
       // For now, we'll simulate successful payment
 
       // Simulate API call
@@ -103,7 +129,7 @@ const Payment: React.FC = () => {
     <div className="min-h-screen bg-white py-12">
       <Helmet>
         <title>Complete Payment - {currentPackage.name} Plan | Fynteq Pulse</title>
-        <meta name="description" content={`Complete your payment for Fynteq Pulse ${currentPackage.name} plan. Secure checkout with Stripe or PayPal.`} />
+        <meta name="description" content={`Complete your payment for Fynteq Pulse ${currentPackage.name} plan. Secure checkout with Stripe.`} />
         <link rel="canonical" href={`https://fynteq.com/payment?package=${packageName}&billing=${billing}`} />
       </Helmet>
       <div className="max-w-md mx-auto px-6">
@@ -128,14 +154,14 @@ const Payment: React.FC = () => {
               {billing === 'yearly' && (
                 <div className="flex justify-between items-center text-green-600">
                   <span className="text-sm">Yearly Discount (34%)</span>
-                  <span className="text-sm font-medium">-€{(monthlyPrice * 12 - finalPrice).toLocaleString()}</span>
+                  <span className="text-sm font-medium">-${(monthlyPrice * 12 - finalPrice).toLocaleString()}</span>
                 </div>
               )}
               <div className="pt-3 border-t border-slate-200">
                 <div className="flex justify-between items-center">
                   <span className="text-lg font-semibold text-slate-900">Total</span>
                   <span className="text-2xl font-bold text-slate-900">
-                    €{finalPrice.toLocaleString()}/{billing === 'yearly' ? 'yr' : 'mo'}
+                    ${finalPrice.toLocaleString()}/{billing === 'yearly' ? 'yr' : 'mo'}
                   </span>
                 </div>
               </div>
@@ -153,14 +179,6 @@ const Payment: React.FC = () => {
                   <div className="text-sm text-slate-500">Powered by Stripe</div>
                 </div>
                 <img src="/images/brands/stripe-logo-AQEyPRPODaTM3Ern.png.avif" alt="Stripe" className="h-6 opacity-60 grayscale" />
-              </label>
-              <label className="flex items-center p-4 border border-slate-100 rounded-xl cursor-pointer hover:border-slate-200 transition-all card">
-                <input type="radio" name="payment" value="paypal" className="mr-3" />
-                <div className="flex-1">
-                  <div className="font-medium text-slate-900">PayPal</div>
-                  <div className="text-sm text-slate-500">Pay with your PayPal account</div>
-                </div>
-                <img src="/images/brands/pngimg.com---paypal_png7-mePvDEDJbQCke023.png.avif" alt="PayPal" className="h-6 opacity-60 grayscale" />
               </label>
             </div>
           </div>
@@ -187,7 +205,7 @@ const Payment: React.FC = () => {
                 : 'button-primary'
             }`}
           >
-            {isProcessing ? 'Processing Payment...' : `Pay €${finalPrice.toLocaleString()}`}
+            {isProcessing ? 'Processing Payment...' : `Pay $${finalPrice.toLocaleString()}`}
           </button>
 
           <p className="mt-4 text-xs text-center text-slate-500">

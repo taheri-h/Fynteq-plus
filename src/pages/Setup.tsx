@@ -140,7 +140,7 @@ const Setup: React.FC = () => {
             <div className="card p-8 pb-2.5 flex flex-col h-full">
               <div className="flex flex-col flex-grow gap-6">
                 <div className="flex-grow">
-                  <h3 className="text-2xl font-semibold text-slate-900 mb-2">Stripe Checkout Setup - €299</h3>
+                  <h3 className="text-2xl font-semibold text-slate-900 mb-2">Stripe Checkout Setup - $299</h3>
                   <p className="text-xs text-slate-500 mb-2 text-left">50% upfront, 50% after delivery.</p>
                   <p className="text-slate-600 mb-4">Get paid online in 2–3 days.</p>
                   <ul className="space-y-2 text-sm text-slate-600">
@@ -164,7 +164,7 @@ const Setup: React.FC = () => {
             <div className="card p-8 pb-2.5 flex flex-col h-full">
               <div className="flex flex-col flex-grow gap-6">
                 <div className="flex-grow">
-                  <h3 className="text-2xl font-semibold text-slate-900 mb-2">Subscriptions Setup - €749</h3>
+                  <h3 className="text-2xl font-semibold text-slate-900 mb-2">Subscriptions Setup - $749</h3>
                   <p className="text-xs text-slate-500 mb-2 text-left">50% upfront, 50% after delivery.</p>
                   <p className="text-slate-600 mb-4">Turn one-time buyers into recurring revenue.</p>
                   <ul className="space-y-2 text-sm text-slate-600">
@@ -189,7 +189,7 @@ const Setup: React.FC = () => {
             <div className="card p-8 pb-2.5 flex flex-col h-full">
               <div className="flex flex-col flex-grow gap-6">
                 <div className="flex-grow">
-                  <h3 className="text-2xl font-semibold text-slate-900 mb-2">CRM Integration (Salesforce / HubSpot) - €1499</h3>
+                  <h3 className="text-2xl font-semibold text-slate-900 mb-2">CRM Integration (Salesforce / HubSpot) - $1499</h3>
                   <p className="text-xs text-slate-500 mb-2 text-left">50% upfront, 50% after delivery.</p>
                   <p className="text-slate-600 mb-4">Connect payments with your CRM in 7–10 days.</p>
                   <ul className="space-y-2 text-sm text-slate-600">
@@ -214,7 +214,7 @@ const Setup: React.FC = () => {
             <div className="card p-8 pb-2.5 flex flex-col h-full">
               <div className="flex flex-col flex-grow gap-6">
                 <div className="flex-grow">
-                  <h3 className="text-2xl font-semibold text-slate-900 mb-2">Marketplace Setup (Stripe Connect) - from €1999</h3>
+                  <h3 className="text-2xl font-semibold text-slate-900 mb-2">Marketplace Setup (Stripe Connect) - from $1999</h3>
                   <p className="text-xs text-slate-500 mb-2 text-left">50% upfront, 50% after delivery.</p>
                   <p className="text-slate-600 mb-4">Build your platform like Etsy or Airbnb.</p>
                   <ul className="space-y-2 text-sm text-slate-600">

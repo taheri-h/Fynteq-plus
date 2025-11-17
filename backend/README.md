@@ -91,7 +91,7 @@ Server runs on `http://localhost:5001`
 1. **JWT Secret**: Change `JWT_SECRET` to a strong random string before production
 2. **CORS**: Update `FRONTEND_URL` when you deploy your frontend
 3. **MongoDB**: Ensure MongoDB server is accessible
-4. **Amounts**: All prices stored in **cents** (e.g., €29 = 2900 cents)
+4. **Amounts**: All prices stored in **cents** (e.g., $29 = 2900 cents)
 
 ---
 

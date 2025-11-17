@@ -8,10 +8,10 @@ const router = express.Router();
 
 // Package prices in cents
 const PACKAGE_PRICES = {
-  checkout: 29900,      // €299
-  subscriptions: 74900, // €749
-  crm: 149900,          // €1499
-  marketplace: 199900,  // from €1999
+  checkout: 29900,      // $299
+  subscriptions: 74900, // $749
+  crm: 149900,          // $1499
+  marketplace: 199900,  // from $1999
 };
 
 // @route   POST /api/setup/request

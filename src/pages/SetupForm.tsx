@@ -38,10 +38,10 @@ const SetupForm: React.FC = () => {
   const [error, setError] = useState('');
 
   const packageInfo: Record<string, { name: string; price: string; description: string }> = {
-    'checkout': { name: 'Stripe Checkout Setup', price: '€299', description: 'Get paid online in 2–3 days' },
-    'subscriptions': { name: 'Subscriptions Setup', price: '€749', description: 'Turn one-time buyers into recurring revenue' },
-    'crm': { name: 'CRM Integration', price: '€1499', description: 'Connect payments with your CRM in 7–10 days' },
-    'marketplace': { name: 'Marketplace Setup', price: 'from €1999', description: 'Build your platform like Etsy or Airbnb' }
+    'checkout': { name: 'Stripe Checkout Setup', price: '$299', description: 'Get paid online in 2–3 days' },
+    'subscriptions': { name: 'Subscriptions Setup', price: '$749', description: 'Turn one-time buyers into recurring revenue' },
+    'crm': { name: 'CRM Integration', price: '$1499', description: 'Connect payments with your CRM in 7–10 days' },
+    'marketplace': { name: 'Marketplace Setup', price: 'from $1999', description: 'Build your platform like Etsy or Airbnb' }
   };
 
   const currentPackage = packageInfo[packageName || 'checkout'] || packageInfo['checkout'];
@@ -330,11 +330,11 @@ const SetupForm: React.FC = () => {
                     className="w-full px-4 py-3 border border-slate-200 rounded-xl focus:ring-2 focus:ring-slate-900 focus:border-transparent transition-all"
                   >
                     <option value="">Select range</option>
-                    <option value="0-1k">€0 - €1,000</option>
-                    <option value="1k-10k">€1,000 - €10,000</option>
-                    <option value="10k-50k">€10,000 - €50,000</option>
-                    <option value="50k-100k">€50,000 - €100,000</option>
-                    <option value="100k+">€100,000+</option>
+                    <option value="0-1k">$0 - $1,000</option>
+                    <option value="1k-10k">$1,000 - $10,000</option>
+                    <option value="10k-50k">$10,000 - $50,000</option>
+                    <option value="50k-100k">$50,000 - $100,000</option>
+                    <option value="100k+">$100,000+</option>
                   </select>
                 </div>
 

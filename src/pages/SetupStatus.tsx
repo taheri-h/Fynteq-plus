@@ -9,10 +9,10 @@ const SetupStatus: React.FC = () => {
   const [paymentData, setPaymentData] = useState<any>(null);
 
   const packageInfo: Record<string, { name: string; price: string }> = {
-    'checkout': { name: 'Stripe Checkout Setup', price: '€299' },
-    'subscriptions': { name: 'Subscriptions Setup', price: '€749' },
-    'crm': { name: 'CRM Integration', price: '€1499' },
-    'marketplace': { name: 'Marketplace Setup', price: 'from €1999' }
+    'checkout': { name: 'Stripe Checkout Setup', price: '$299' },
+    'subscriptions': { name: 'Subscriptions Setup', price: '$749' },
+    'crm': { name: 'CRM Integration', price: '$1499' },
+    'marketplace': { name: 'Marketplace Setup', price: 'from $1999' }
   };
 
   const currentPackage = packageInfo[packageName || 'checkout'] || packageInfo['checkout'];
@@ -176,7 +176,7 @@ const SetupStatus: React.FC = () => {
               <span className="text-slate-900 font-medium">
                 {paymentData.upfrontAmount 
                   ? (paymentData.fullPriceValue 
-                      ? `€${(paymentData.fullPriceValue - paymentData.upfrontAmountValue).toFixed(2)}`
+                      ? `$${(paymentData.fullPriceValue - paymentData.upfrontAmountValue).toFixed(2)}`
                       : 'Due after delivery')
                   : 'Due after delivery'}
               </span>

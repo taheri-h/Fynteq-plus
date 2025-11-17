@@ -253,7 +253,7 @@
       {
         "icon": "",
         "name": "Starter",
-        "price": "€29",
+        "price": "$29",
         "description": "For creators, coaches, small e-commerce.",
         "for": "For creators, coaches, small e-commerce.",
         "features": [
@@ -269,7 +269,7 @@
       {
         "icon": "",
         "name": "Pro",
-        "price": "€79",
+        "price": "$79",
         "description": "For SaaS, memberships, subscription businesses.",
         "for": "For SaaS, memberships, subscription businesses.",
         "features": [
@@ -287,7 +287,7 @@
       {
         "icon": "",
         "name": "Scale",
-        "price": "€149",
+        "price": "$149",
         "description": "For agencies, marketplaces & multi-brand companies.",
         "for": "For agencies, marketplaces & multi-brand companies.",
         "features": [
@@ -309,22 +309,22 @@
       "services": [
         {
           "name": "Stripe Checkout Setup",
-          "price": "€299",
+          "price": "$299",
           "description": "Get paid in 2–3 days. Includes Apple/Google Pay + success/cancel + webhooks."
         },
         {
           "name": "Subscription Setup",
-          "price": "€749",
+          "price": "$749",
           "description": "Turn one-time buyers into recurring revenue."
         },
         {
           "name": "CRM Integration",
-          "price": "€1,499",
+          "price": "$1,499",
           "description": "Stripe ↔ Salesforce sync + field mapping + alerts."
         },
         {
           "name": "Marketplace Setup",
-          "price": "€1,999+",
+          "price": "$1,999+",
           "description": "Stripe Connect onboarding, KYC, split payouts."
         }
       ]
@@ -1005,9 +1005,9 @@
       "freelancers": "Freelancers",
       "agencies": "Agencies",
       "price": "Price",
-      "fynteqPrice": "€299-1,999",
-      "freelancerPrice": "€2,000-5,000",
-      "agencyPrice": "€5,000-15,000",
+      "fynteqPrice": "$299-1,999",
+      "freelancerPrice": "$2,000-5,000",
+      "agencyPrice": "$5,000-15,000",
       "freeTimeCost": "Free (time cost)",
       "timeline": "Timeline",
       "expertise": "Expertise",
@@ -1078,7 +1078,7 @@
     },
     "ourServices": {
       "title": "Our Services", 
-      "description": "Professional payment integration packages starting at €299. Get your payment gateway live in 3-7 days.",
+      "description": "Professional payment integration packages starting at $299. Get your payment gateway live in 3-7 days.",
       "link": "View Pricing →"
     },
     "getExpertHelp": {

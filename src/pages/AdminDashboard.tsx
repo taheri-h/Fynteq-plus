@@ -92,7 +92,7 @@ const AdminDashboard: React.FC = () => {
           id: `request-${Date.now()}`,
           packageName: data.package || 'checkout',
           packageDisplayName: data.packageName || 'Stripe Checkout Setup',
-          price: data.price || '€299',
+          price: data.price || '$299',
           company: data.company || '',
           email: data.email || '',
           name: data.name || '',

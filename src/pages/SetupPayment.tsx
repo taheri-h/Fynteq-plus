@@ -14,10 +14,10 @@ const SetupPayment: React.FC = () => {
   const validSetupPackages = ['checkout', 'subscriptions', 'crm', 'marketplace'];
 
   const packageInfo: Record<string, { name: string; price: string; fullPrice: number }> = {
-    'checkout': { name: 'Stripe Checkout Setup', price: '€299', fullPrice: 299 },
-    'subscriptions': { name: 'Subscriptions Setup', price: '€749', fullPrice: 749 },
-    'crm': { name: 'CRM Integration', price: '€1499', fullPrice: 1499 },
-    'marketplace': { name: 'Marketplace Setup', price: 'from €1999', fullPrice: 1999 }
+    'checkout': { name: 'Stripe Checkout Setup', price: '$299', fullPrice: 299 },
+    'subscriptions': { name: 'Subscriptions Setup', price: '$749', fullPrice: 749 },
+    'crm': { name: 'CRM Integration', price: '$1499', fullPrice: 1499 },
+    'marketplace': { name: 'Marketplace Setup', price: 'from $1999', fullPrice: 1999 }
   };
 
   // Redirect if not a valid setup package
@@ -59,8 +59,8 @@ const SetupPayment: React.FC = () => {
   // Calculate 50% upfront payment (round up to nearest whole number)
   const upfrontAmount = Math.ceil(currentPackage.fullPrice / 2);
   const upfrontPrice = packageName === 'marketplace' 
-    ? `from €${upfrontAmount}` 
-    : `€${upfrontAmount}`;
+    ? `from $${upfrontAmount}` 
+    : `$${upfrontAmount}`;
 
   const handlePayment = async () => {
     if (!user) {
